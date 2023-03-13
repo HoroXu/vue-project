@@ -7,7 +7,8 @@
 import _ from 'loadsh'
 const clickFn = () => {
   const a = 'fd'
+  const b = 'aaa'
   a = '复制'
-  console.log(a,'sdfsd====')
+  console.log(a, 'sdfsd====')
 }
 </script>
