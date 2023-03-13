@@ -8,7 +8,8 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",
-    "lint": "eslint src --fix --ext .js,.ts,.jsx,.tsx,.vue && prettier --write"
+    "lint": "eslint src --fix --ext .js,.ts,.jsx,.tsx,.vue && prettier --write",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
@@ -16,11 +17,10 @@
     }
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --write"
-    ],
-    "*.ts": [
-      "prettier --parser=typescript --write"
+    "*.{ts,tsx,js}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
     ]
   },
   "dependencies": {
