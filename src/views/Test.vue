@@ -8,7 +8,7 @@ import _ from 'loadsh'
 const clickFn = () => {
   const a = 'fd'
   const b = 'aaa'
-  a = '复制'
+  a = '复gf制'
   console.log(a, 'sdfsd====')
 }
 </script>
