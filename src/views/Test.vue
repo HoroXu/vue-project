@@ -7,7 +7,7 @@
 import _ from 'loadsh'
 const clickFn = () => {
   const a = 'fd'
-  a = 'sshh'
+  a = 'ssguyuhh'
   console.log(a,'sdfsd====')
 }
 </script>

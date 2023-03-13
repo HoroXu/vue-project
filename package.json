@@ -9,18 +9,14 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",
     "lint": "eslint src --fix --ext .js,.ts,.jsx,.tsx,.vue && prettier --write",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint-staged":"lint-staged"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
+
   "lint-staged": {
     "*.{ts,tsx,js}": [
       "eslint --fix",
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "dependencies": {
