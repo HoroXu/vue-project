@@ -6,6 +6,8 @@
 <script lang="ts" setup>
 import _ from 'loadsh'
 const clickFn = () => {
-  console.log('sdfsd====')
+  const a = 'fd'
+  a = 'hhh'
+  console.log(a,'sdfsd====')
 }
 </script>
