@@ -1,11 +1,10 @@
 <template>
-  <div>1</div>
+  <div @click="clickFn">1</div>
   <div>2</div>
+  <img src="ff" />
 </template>
-<script lang="ts">
-import { defineComponent } from "vue";
-import _ from 'lodash'
-export default defineComponent({
-  setup() {},
-});
+<script lang="ts" setup>
+const clickFn = () => {
+  console.log('sdfsd====')
+}
 </script>
