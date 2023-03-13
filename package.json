@@ -8,11 +8,12 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",
-    "lint": "eslint --fix --ext \".js,.vue\" --ignore-path .gitignore ."
+    "lint": "eslint src --fix --ext .js,.ts,.jsx,.tsx,.vue && prettier --write"
   },
-  "gitHooks": {
-    "pre-commit": "lint-staged",
-    "commit-msg": "node scripts/verify-commit-msg.js"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "*.js": [
@@ -38,6 +39,7 @@
     "eslint-config-prettier": "^8.7.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.9.0",
+    "husky": "^8.0.3",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.8.4",
     "typescript": "~4.8.4",
