@@ -4,6 +4,7 @@
   <img src="ff" />
 </template>
 <script lang="ts" setup>
+import _ from 'loadsh'
 const clickFn = () => {
   console.log('sdfsd====')
 }
