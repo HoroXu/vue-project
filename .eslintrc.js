@@ -3,6 +3,7 @@ module.exports = {
   extends: [
     'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-recommended',
+    'standard',
     'plugin:prettier/recommended'
     // 'eslint-config-airbnb',
   ], //定义文件继承的子规范
