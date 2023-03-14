@@ -6,9 +6,9 @@
 <script lang="ts" setup>
 import _ from 'loadsh'
 const clickFn = () => {
-  const a = 'fd'
-  const bq = 'awwa'
-  a = '测试验证校验'
+  const a = 'faaad'
+  const bq = 'a发顺丰wwa'
+  a = '验证校验'
   console.log(a, 'sdfsd====')
 }
 </script>
