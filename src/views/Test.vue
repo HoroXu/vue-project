@@ -7,8 +7,8 @@
 import _ from 'loadsh'
 const clickFn = () => {
   const a = 'faaad'
-  const bq = '发顺丰wa'
-  a = '测试验证校验'
+  const bq = '发wa'
+  a = '验证校验'
   console.log(a, 'sdfsd====')
 }
 </script>
