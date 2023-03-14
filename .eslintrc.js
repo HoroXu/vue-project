@@ -1,20 +1,20 @@
 module.exports = {
-  parser: 'vue-eslint-parser', //定义ESLint的解析器
+  parser: 'vue-eslint-parser', // 定义ESLint的解析器
   extends: [
     'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-recommended',
     'standard',
     'plugin:prettier/recommended'
     // 'eslint-config-airbnb',
-  ], //定义文件继承的子规范
+  ], // 定义文件继承的子规范
   parserOptions: {
     ecmaVersion: 'latest',
     parser: '@typescript-eslint/parser',
     sourceType: 'module'
   },
-  plugins: ['@typescript-eslint'], //定义了该eslint文件所依赖的插件
+  plugins: ['@typescript-eslint'], // 定义了该eslint文件所依赖的插件
   env: {
-    //指定代码的运行环境
+    // 指定代码的运行环境
     browser: true,
     node: true,
     es6: true
@@ -28,6 +28,6 @@ module.exports = {
     '@typescript-eslint/ban-ts-ignore': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
-    '@typescript-eslint/no-unused-vars':'error'
+    '@typescript-eslint/no-unused-vars': 'off'
   }
 }
